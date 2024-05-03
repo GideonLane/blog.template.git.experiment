@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+/*font-family: "Protest Revolution", sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: solid red thin;*/
+    background-color: var(--five);
+    font-family: "Protest Revolution", sans-serif;
+}
+:root {
+    --one:   #6be6c1;
+    --two:   #0f2125;
+    --three: #235470;
+    --four:  #4da0be;
+    --five:  #c7b9c2;
+    --six:   rgb(230, 227, 227);
+    --seven: #1b3b42;
+}
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+    /*smooth behavior for nav pathing auto scrolling on screen smoothly*/
+}
+header {
+    color: var(--two);
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 500;
+    text-align: center;
+}
+@media (max-width: 1700px){
+    header {
+        font-size: 15px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 1218px){
+    header {
+        font-size: 10px;
+        line-height: 50px;
+    }
+}
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    list-style: none;
+    min-height: 100px;
+    line-height: 100px;
+    /*position: fixed;*/
+    top: 80px;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+a {
+    transition: .3s ease-in-out;
+}
+li a {
+    text-decoration: none;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 30px;
+    
+    transition: .3s ease-in-out;
+    /*having a bug with transition property not functioning*/
+}
+ul a {
+    color: var(--two);
+    text-decoration: none;  
+    transition: .3s ease-in-out; 
+}
+ul li .logo {
+    background-color: var(--four);
+    margin-left: 50px;
+    color: var(--six);
+    box-shadow: 5px 5px 10px var(--two);
+    transition: .1s ease-in-out;   
+}
+li a:nth-child(3) {
+    background-color: transparent !important;
+}
+.logo:hover{
+    box-shadow: 6px 6px 15px var(--six);
+}
+ul li:hover {
+    text-shadow: 2px 2px 10px var(--three);
+    transform: scale(1.1);  
+}
+ul a button{
+    border-radius: 25px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    color: var(--six);
+    background-color: var(--four);
+    margin-right: 50px;
+    box-shadow: 5px 5px 25px var(--two);
+    transition: .1s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px var(--five);
+    transform: scale(1.1);
+}
+@media (max-width: 1118px){
+    li a {
+        font-size: 22px;
+        padding: 15px 32px;
+    }
+}
+@media (max-width: 944px){
+    li a {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+}
+@media (max-width: 700px){
+    li a {
+        font-size: 10px;
+        padding: 5px 16px;
+    }
+    ul a button {
+        width: 100px;
+        height: 30px;
+    }
+    ul li .logo {
+        margin-left: 10px;
+    }
+}
+h1 {
+    margin-top: 200px;
+    line-height: 80px;
+    color: var(--two);
+    text-align: center;
+}
+main {
+    margin-top: 50px;
+}
+figure {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+img {
+    width: 82%;
+    border: solid var(--six) 5px;
+    border-radius: 15px;
+}
+@media (max-width: 1118px){
+    figure{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+@media (max-width: 600px){
+    figure{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+h3 {
+    font-size: 40px;
+    word-spacing: 10px;
+    font-style: italic;
+    color: var(--two);
+    margin-left: 20px;
+}
+p {
+    font-family: "Protest Revolution", sans-serif;
+    color: var(--seven);
+    font-size: 30px;
+    margin: 15px 80px 15px 80px;
+}
+section {
+    display: flex;
+    text-align: center;
+}
+.section-img {
+    height: 600px;
+}
+span {
+    color: var(--two);
+    font-size: 40px;
+    margin: 70px 50px 0 10px;
+    line-height: 60px;
+    letter-spacing: .2px;
+    word-spacing: 5px;
+
+}
+@media (max-width: 1600px){
+    span {
+        font-size: 35px !important;
+        line-height: 50px;
+    }
+}
+@media (max-width: 1400px){
+    span {
+        font-size: 30px !important;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1250px){
+    span {
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 1118px){
+    span {
+        line-height: 40px;
+    }
+}
+@media (max-width: 1000px){
+    span {
+        line-height: 30px;
+        font-size: 30px !important;
+    }
+}
+@media (max-width: 900px){
+    span {
+        line-height: 30px;
+        font-size: 20px !important;
+        margin-top: -20px;
+    }
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+}
+.connect-footer {
+    font-size: 30px;
+    word-spacing: 10px;
+    margin-top: 120px;
+}
+.btn {
+    margin-top: 20px;
+     height: 50px;
+     width: 130px;
+     border-radius: 25px;
+     border-style: none;
+     background-color: var(--four);
+     color: var(--six);
+     box-shadow: 5px 5px 25px var(--two);
+    transition: .1s ease-in-out;
+}
+.btn:hover {
+    box-shadow: 5px 5px 15px var(--five);
+    transform: scale(1.1);
+}
+.popup-container {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    opacity: 0;
+    pointer-events: none;
+}
+.popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
+}
+.popup-container .popup-box {
+    width: 1000px;
+    height: 500px;
+    background: var(--three);
+    border-radius: 40px;
+    box-shadow: 5px 5px 25px var(--two);
+    color: var(--six);
+    transform: scale(0);
+}
+.popup-container.active .popup-box {
+    transform: scale(1);
+    transition: .4s ease;
+    transition-delay: .15s;
+}
+.popup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+.svg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin-top: 30px;
+    background: transparent;
+}
+@media (max-width: 800px){
+    .popup-container {
+        display: flex;
+        place-content: center;
+    }
+    /*having a bug with @media sometimes responding and sometiems not responding.*/
+}
+h5 {
+    font-size: 30px;
+    padding: 30px;
+    word-spacing: 5px;
+    background: transparent;
+    text-shadow: 5px 5px 15px var(--two);
+}
+svg {
+    height: 70px;
+    width: 70px;
+    background: var(--six);
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.bi-bi-instagram {
+    color: rgb(94, 19, 94);
+    box-shadow: 5px 5px 25px var(--two);
+}
+.bi-bi-twitter {
+    color: rgb(115, 181, 207);
+    box-shadow: 5px 5px 25px var(--two);
+}
+.bi-bi-facebook {
+    color: rgb(0, 0, 255);
+    box-shadow: 5px 5px 25px var(--two);
+}
+.bi-bi-instagram:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 25px var(--two);
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+.bi-bi-twitter:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 25px var(--two);
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+.bi-bi-facebook:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 25px var(--two);
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+.popup-button {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 25px;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: none;
+    color: var(--six);
+    background-color: var(--four);
+    box-shadow: 5px 5px 25px var(--two);
+    transition: .1s ease-in-out;
+}
+.popup-button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px var(--five);
+    transform: scale(1.1);
+}
